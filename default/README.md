@@ -18,20 +18,20 @@
 | Area | What you get |
 |------|----------------|
 | **Search** | KQL editor, time picker, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, annotations |
-| **Charts** | **46** built-in visualizations (listed below) + plugin gallery + your own plugins |
+| **Charts** | **49** built-in visualizations (listed below) + plugin gallery + your own plugins |
 | **Dashboards** | Layout editor, parent/child searches, variables, versions, collaboration (when configured), export |
 | **Knowledge** | In-app shortcuts to lookups, parsers, regexes, grok, macros (same API as Search) |
 | **Theme** | Light/dark follows Cribl when embedded; manual override in standalone use |
 
 ---
 
-## Built-in visualizations (46)
+## Built-in visualizations (49)
 
 These ship with the app. **+ Plugins** can add more.
 
 **Basic** — Column, Horizontal Bar, Line, Area, Pie, Donut, Scatter, Single value, Arc Gauge, Table, Events, KPI Strip, Radial Gauge, Marker Gauge, Speedometer Gauge, Liquid Fill Gauge, Linear Gauge, Honeycomb Status, App Status Tiles, Status Grid, Funnel  
 
-**Statistical & time-series** — Heatmap, Boxplot, Parallel Coordinates, Calendar Heatmap, Candlestick  
+**Statistical & time-series** — Heatmap, Boxplot, Parallel Coordinates, Calendar Heatmap, Candlestick, Waterfall, Bullet, Gantt  
 
 **Networks & hierarchies** — Sankey, Network Graph, Chord Diagram, Flow Diagram, Tree (Dendrogram), Treemap, Sunburst  
 

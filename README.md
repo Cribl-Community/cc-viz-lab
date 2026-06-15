@@ -6,7 +6,7 @@ A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Crib
 
 - **KQL search** — Editor with time range, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, and annotations. Optional **Cribl Copilot** flows (query/dashboard conversion) call Cribl AI when your deployment allows it.
 - **Results panes** — Switch between **Events** (raw rows), **Fields** (column stats), and **Chart**. Map result columns to visualization channels; many chart types include a **sample query** you can load and re-run.
-- **Charts** — **46** built-in visualizations (bars, lines, gauges, heatmaps, Sankey, geo, security views such as MITRE ATT&CK, and more). Extend the catalog with **+ Plugins** from the gallery or a trusted ESM URL (plugin code runs with full page permissions—only install sources you trust).
+- **Charts** — **49** built-in visualizations (bars, lines, gauges, heatmaps, Sankey, geo, security views such as MITRE ATT&CK, and more). Extend the catalog with **+ Plugins** from the gallery or a trusted ESM URL (plugin code runs with full page permissions—only install sources you trust).
 - **Dashboards** — Drag-and-drop layout, parent/child searches, variables, versions, and export. **Knowledge** shortcuts jump to lookups, parsers, regexes, Grok, and macros using the same APIs as native Search.
 
 Dataset administration stays in native Cribl Search; Viz Lab focuses on running searches and building visuals on top of data you already have access to.
