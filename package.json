@@ -1,7 +1,7 @@
 {
   "name": "vizlab",
-  "version": "0.52.718",
-  "displayName": "Viz Lab 0.52.718",
+  "version": "0.52.719",
+  "displayName": "Viz Lab 0.52.719",
   "description": "Cribl Search App Platform app: KQL Search (Events / Fields / Chart), 46 built-in visualizations plus plugins, dashboards with import and variables, Knowledge shortcuts, annotations, and Cribl-aligned theming.",
   "author": "David Maislin"
 }
