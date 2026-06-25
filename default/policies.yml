@@ -1,0 +1,61 @@
+# Cribl product API paths this app accesses.
+# Admins see these at install time; shared users get access automatically.
+#
+# App-scoped KV (/a/${appId}/kvstore/*) and proxy (/a/${appId}/proxy/*)
+# are granted automatically via the AppUser role — not declared here.
+policies:
+  # Worker groups / fleets / search groups (Lookup Manager target picker)
+  - object: '/master/groups'
+    actions: ['GET']
+  - object: '/products/stream/groups'
+    actions: ['GET']
+  - object: '/products/stream/groups/*'
+    actions: ['GET']
+  - object: '/products/edge/groups'
+    actions: ['GET']
+  - object: '/products/edge/groups/*'
+    actions: ['GET']
+
+  # Search API (jobs, saved searches, dashboards, notebooks, datasets)
+  - object: '/m/:gid/search/jobs'
+    actions: ['GET', 'POST']
+  - object: '/m/:gid/search/jobs/*'
+    actions: ['GET', 'DELETE']
+  - object: '/m/:gid/search/saved'
+    actions: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
+  - object: '/m/:gid/search/saved/*'
+    actions: ['GET', 'PUT', 'PATCH', 'DELETE']
+  - object: '/m/:gid/search/dashboards'
+    actions: ['GET']
+  - object: '/m/:gid/search/dashboards/*'
+    actions: ['GET']
+  - object: '/m/:gid/search/notebooks'
+    actions: ['GET']
+  - object: '/m/:gid/search/notebooks/*'
+    actions: ['GET']
+  - object: '/m/:gid/search/dataset-providers'
+    actions: ['GET']
+  - object: '/m/:gid/search/datasets'
+    actions: ['GET']
+  - object: '/m/:gid/search/usageGroups'
+    actions: ['GET']
+
+  # Knowledge objects (lookups, macros, parsers, grok)
+  - object: '/m/:gid/system/lookups'
+    actions: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
+  - object: '/m/:gid/system/lookups/*'
+    actions: ['GET', 'PUT', 'PATCH', 'DELETE']
+  - object: '/m/:gid/search/macros'
+    actions: ['GET']
+  - object: '/m/:gid/search/knowledge'
+    actions: ['GET']
+
+  # Datasets listing (Field Profiler, Dataset Mapper)
+  - object: '/m/:gid/datasets'
+    actions: ['GET']
+  - object: '/m/:gid/search/datatypes'
+    actions: ['GET']
+
+  # System metrics (System Monitoring page)
+  - object: '/system/metrics'
+    actions: ['GET']
