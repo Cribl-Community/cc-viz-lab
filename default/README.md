@@ -18,7 +18,7 @@
 | Area | What you get |
 |------|----------------|
 | **Search** | KQL editor, time picker, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, annotations |
-| **Charts** | **55** built-in visualizations (listed below) + plugin gallery + your own plugins |
+| **Charts** | **103** built-in visualizations (listed below) + plugin gallery + your own plugins |
 | **Dashboards** | Layout editor, parent/child searches, variables, versions, collaboration (when configured), export |
 | **Knowledge** | In-app shortcuts to lookups, parsers, regexes, grok, macros (same API as Search) |
 | **Theme** | Light/dark follows Cribl when embedded; manual override in standalone use |
@@ -45,19 +45,86 @@ These tools live in the sidebar and are designed to help teams migrate from othe
 
 ---
 
-## Built-in visualizations (55)
+## Built-in visualizations (103)
 
-These ship with the app. **+ Plugins** can add more.
+Viz Lab ships with **103 visualizations** across 7 categories. **+ Plugins** can add more from the gallery or custom ESM URLs.
 
-**Basic** — Column, Horizontal Bar, Line, Area, Pie, Donut, Scatter, Single value, Arc Gauge, Table, Events, KPI Strip, Radial Gauge, Marker Gauge, Speedometer Gauge, Liquid Fill Gauge, Linear Gauge, Honeycomb Status, App Status Tiles, Status Grid, Funnel
+### Basic Charts (24)
 
-**Statistical & time-series** — Heatmap, Boxplot, Parallel Coordinates, Calendar Heatmap, Candlestick, Waterfall, Bullet, Gantt
+Column, Horizontal Bar, Radial Bar, Line, Bump Chart, Area, Pie, Donut, Scatter, Bubble, Single Value, Arc Gauge, Table, Events, KPI Strip, Radial Gauge, Marker Gauge, Speedometer Gauge, Liquid Fill Gauge, Linear Gauge, Honeycomb Status, App Status Tiles, Status Grid, Funnel
 
-**Networks & hierarchies** — Sankey, Network Graph, Chord Diagram, Flow Diagram, Tree (Dendrogram), Treemap, Sunburst
+![Column chart](../docs/images/viz/column.png)
+![Pie chart](../docs/images/viz/pie.png)
+![Funnel](../docs/images/viz/funnel.png)
 
-**Geo & 3D** — Isometric Bars, 3D Scatter, 3D Network, Geo Choropleth
+### Statistical & Time-Series (9)
 
-**Security** — MITRE ATT&CK Matrix, Cyber Kill Chain, Detection Coverage Radar, Process Lineage, Attack Path Graph, Auth Anomaly Heatmap, Geo Attack Flows, Alert Correlation, IOC Velocity
+Heatmap, Box Plot, Parallel Coordinates, Calendar Heatmap, Candlestick, Waterfall, Dumbbell, Bullet, Gantt
+
+![Heatmap](../docs/images/viz/heatmap.png)
+![Waterfall](../docs/images/viz/waterfall.png)
+![Calendar](../docs/images/viz/calendar.png)
+
+### Networks & Hierarchies (7)
+
+Sankey, Network Graph, Chord Diagram, Flow Diagram (React Flow), Tree / Dendrogram, Treemap, Sunburst
+
+![Network](../docs/images/viz/network2d.png)
+![Treemap](../docs/images/viz/treemap.png)
+![Sunburst](../docs/images/viz/sunburst.png)
+
+### Geo & 3D (8)
+
+Isometric Bars, 3D Scatter, 3D Surface, 3D Network, Geo Choropleth, Globe (Three.js)
+
+![Geo Choropleth](../docs/images/viz/geo-choropleth.png)
+
+### Security (9)
+
+MITRE ATT&CK Matrix, Cyber Kill Chain Funnel, Detection Coverage Radar, Process Lineage Tree, Attack Path Graph, Auth Anomaly Heatmap, Geo Attack Flows, Alert Correlation, IOC Velocity Streamgraph
+
+![MITRE Matrix](../docs/images/viz/mitre-matrix.png)
+![Detection Radar](../docs/images/viz/detection-radar.png)
+
+### Gallery — ECharts Extended (21)
+
+Theme River, Pictorial Bar, Wind Rose, Polar Scatter, Liquid Fill, **Nightingale Rose**, **Bar Race**, **Circular Graph**, **Sankey (Vertical)**, **3D Gauge**, **3D Funnel**, **3D Pie**, **Stacked Donut**, **Calendar Scatter**, **Radar (Polar)**, **Bubble Map**, **River Flow**, **Polar Bar**, **3D Globe (ECharts)**, **3D Scatter (ECharts)**
+
+![Nightingale Rose](../docs/images/viz/g-nightingale.png)
+![Bar Race](../docs/images/viz/g-bar-race.png)
+![Sankey Vertical](../docs/images/viz/g-sankey-vertical.png)
+![Donut Stack](../docs/images/viz/g-donut-stack.png)
+![Radar Polar](../docs/images/viz/g-radar-polar.png)
+![Polar Bar](../docs/images/viz/g-polar-bar.png)
+![River Flow](../docs/images/viz/g-river.png)
+![3D Funnel](../docs/images/viz/g-funnel-3d.png)
+![3D Pie](../docs/images/viz/g-pie-3d.png)
+![3D Gauge](../docs/images/viz/g-gauge-3d.png)
+
+### Gallery — D3 (16)
+
+Force Bubbles, Hexbin, Radial Tree, Streamgraph, Word Cloud, Zoomable Sunburst, **Violin Plot**, **Beeswarm**, **Lollipop Chart**, **Arc Diagram**, **Packed Circles**, **Ridgeline Plot**, **Slope Chart**, **Waffle Chart**, **Dot Plot**, **Histogram**, **Marimekko**
+
+![Violin Plot](../docs/images/viz/g-violin.png)
+![Beeswarm](../docs/images/viz/g-beeswarm.png)
+![Lollipop](../docs/images/viz/g-lollipop.png)
+![Arc Diagram](../docs/images/viz/g-arc-diagram.png)
+![Packed Circles](../docs/images/viz/g-packed-circles.png)
+![Ridgeline](../docs/images/viz/g-ridgeline.png)
+![Slope Chart](../docs/images/viz/g-slope-chart.png)
+![Waffle](../docs/images/viz/g-waffle.png)
+![Dot Plot](../docs/images/viz/g-dot-plot.png)
+![Histogram](../docs/images/viz/g-histogram.png)
+![Marimekko](../docs/images/viz/g-marimekko.png)
+
+### Gallery — Chart.js (9)
+
+Bubble, Mixed, Polar Area, Radar, Scatter, Stacked Bar, **Nested Doughnut**, **Stacked Area**, **Floating Bar**, **Timeline**
+
+![Nested Doughnut](../docs/images/viz/g-doughnut-nested.png)
+![Stacked Area](../docs/images/viz/g-area-stacked.png)
+![Floating Bar](../docs/images/viz/g-floating-bar.png)
+![Timeline](../docs/images/viz/g-timeline.png)
 
 ---
 
