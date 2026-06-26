@@ -38,7 +38,7 @@ These tools live in the sidebar and are designed to help teams migrate from othe
 | **Field Profiler** | Sample any dataset and get a full field-type, presence-rate, and sample-value breakdown. Auto-populates the dataset dropdown from your tenant's catalog |
 | **Query Library** | 24 curated KQL snippets for security, infrastructure, application, network, and compliance use cases |
 | **KQL Formatter** | Pretty-print or minify a KQL query — one pipe stage per line, indented subqueries |
-| **KQL Explainer** | Paste a KQL query and get a plain-English explanation of each pipe stage (Cribl AI when connected, heuristic otherwise) |
+| **KQL Explainer** | Paste a KQL query and get an annotated version with `//` comments explaining each pipe stage above the original KQL line (Cribl AI when connected, heuristic otherwise) |
 | **Dataset Mapper** | Map legacy source names (Splunk indexes, Sumo partitions, etc.) to Cribl dataset names; auto-substitute in any pasted query |
 | **Tracker** | Track migration item status, blockers, and progress; export as Markdown or executive summary |
 | **Readiness Report** | One-click scored audit of all dashboards and saved searches — produces issues, recommendations, and a dataset inventory |
