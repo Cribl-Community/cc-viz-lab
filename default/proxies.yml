@@ -51,24 +51,3 @@ ai.cribl.cloud:
 #       - Authorization
 #       - Accept
 #   timeout: 30000
-
-# ── Database Proxy (viz-lab-db-proxy) ──────────────────────────────────
-#
-# The platform proxy blocks loopback (127.0.0.1 / localhost) for SSRF
-# protection, so the db-proxy must be reachable on the machine's LAN IP.
-# Update the IP below to match your machine (run: ipconfig getifaddr en0).
-# The db-proxy binds 0.0.0.0 so it listens on all interfaces.
-#
-# Start: cd db-proxy && npm run dev
-192.168.1.160:7400:
-  paths:
-    allowlist:
-      - /api/db/status
-      - /api/db/schema
-      - /api/db/query
-      - /api/db/connections
-      - /api/db/test
-  headers:
-    allowlist:
-      - Content-Type
-  timeout: 30000
