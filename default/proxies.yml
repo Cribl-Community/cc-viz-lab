@@ -54,14 +54,13 @@ ai.cribl.cloud:
 
 # ── Database Proxy (viz-lab-db-proxy) ──────────────────────────────────
 #
-# lvh.me is a public DNS name that resolves to 127.0.0.1. This lets the
-# Cribl App Platform proxy resolve the hostname and forward the request to
-# the local db-proxy sidecar. "localhost" and "127.0.0.1" fail because the
-# platform's DNS resolver rejects literal loopback addresses.
+# The platform proxy blocks loopback (127.0.0.1 / localhost) for SSRF
+# protection, so the db-proxy must be reachable on the machine's LAN IP.
+# Update the IP below to match your machine (run: ipconfig getifaddr en0).
+# The db-proxy binds 0.0.0.0 so it listens on all interfaces.
 #
-# The db-proxy must be running on the same machine as the Cribl instance:
-#   cd db-proxy && npm run dev
-lvh.me:7400:
+# Start: cd db-proxy && npm run dev
+192.168.1.160:7400:
   paths:
     allowlist:
       - /api/db/status
