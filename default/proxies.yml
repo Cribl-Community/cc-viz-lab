@@ -63,3 +63,1372 @@ packs.cribl.io:
 #       - Authorization
 #       - Accept
 #   timeout: 30000
+
+# ── Lookup Manager — Feed Provider Hosts ────────────────────────────────
+#
+# The Lookup Manager's feed marketplace fetches threat intel, reputation,
+# and enrichment data from ~99 external providers. Each host must be
+# declared here for the platform proxy to forward the requests.
+# Auto-generated from src/lookupManager/feedProviders.json.
+
+adaway.org:
+  paths:
+    allowlist:
+      - /hosts.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+analyze.intezer.com:
+  paths:
+    allowlist:
+      - /api/v2-0/files
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.abuseipdb.com:
+  paths:
+    allowlist:
+      - /api/v2/blacklist
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.any.run:
+  paths:
+    allowlist:
+      - /v1/feeds/stix2.1
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.binaryedge.io:
+  paths:
+    allowlist:
+      - /v2/query/ip
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.cleantalk.org:
+  paths:
+    allowlist:
+      - /
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.crowdstrike.com:
+  paths:
+    allowlist:
+      - /detects/entities/summaries
+      - /devices/combined/host-groups
+      - /devices/entities/devices
+      - /devices/queries/devices-scroll
+      - /incidents/combined/incidents
+      - /intel/combined/indicators
+      - /iocs/combined/indicator
+      - /oauth2/token
+      - /spotlight/combined/vulnerabilities
+      - /zero-trust-assessment/combined/assessments
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.dehashed.com:
+  paths:
+    allowlist:
+      - /search
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.dnsdb.info:
+  paths:
+    allowlist:
+      - /lookup/rrset/name
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.etherscan.io:
+  paths:
+    allowlist:
+      - /api
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.fastly.com:
+  paths:
+    allowlist:
+      - /public-ip-list
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.fraudguard.io:
+  paths:
+    allowlist:
+      - /ip/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.fullcontact.com:
+  paths:
+    allowlist:
+      - /v3/person.enrich
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.greynoise.io:
+  paths:
+    allowlist:
+      - /v2/riot/%7Bip%7D
+      - /v3/community/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.hunter.io:
+  paths:
+    allowlist:
+      - /v2/domain-search
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.ip2proxy.com:
+  paths:
+    allowlist:
+      - /
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.ipgeolocation.io:
+  paths:
+    allowlist:
+      - /ipgeo
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.ipstack.com:
+  paths:
+    allowlist:
+      - /%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.passivetotal.org:
+  paths:
+    allowlist:
+      - /v2/whois/search
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.polyswarm.network:
+  paths:
+    allowlist:
+      - /v3/hunt/historical
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.scamalytics.com:
+  paths:
+    allowlist:
+      - /ip/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.securitytrails.com:
+  paths:
+    allowlist:
+      - /v1/domain/%7Bdomain%7D
+      - /v1/ips/nearby
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.shodan.io:
+  paths:
+    allowlist:
+      - /shodan/host/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.snusbase.com:
+  paths:
+    allowlist:
+      - /v2/search
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.stopforumspam.org:
+  paths:
+    allowlist:
+      - /api
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+api.xforce.ibmcloud.com:
+  paths:
+    allowlist:
+      - /ipr/%7Bip%7D
+      - /url/%7Burl%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+bazaar.abuse.ch:
+  paths:
+    allowlist:
+      - /export/csv/full
+      - /export/csv/recent
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+blocklist.greensnow.co:
+  paths:
+    allowlist:
+      - /greensnow.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+capec.mitre.org:
+  paths:
+    allowlist:
+      - /data/xml/capec_latest.xml
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+check.getipintel.net:
+  paths:
+    allowlist:
+      - /check.php
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+check.torproject.org:
+  paths:
+    allowlist:
+      - /torbulkexitlist
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+cinsscore.com:
+  paths:
+    allowlist:
+      - /list/ci-badguys.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+company.clearbit.com:
+  paths:
+    allowlist:
+      - /v2/companies/find
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+cwe.mitre.org:
+  paths:
+    allowlist:
+      - /data/xml/cwec_latest.xml.zip
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+danger.rulez.sk:
+  paths:
+    allowlist:
+      - /projects/bruteforceblocker/blist.php
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+data.iana.org:
+  paths:
+    allowlist:
+      - /TLD/tlds-alpha-by-domain.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+data.phishtank.com:
+  paths:
+    allowlist:
+      - /data/%7Bapi_key%7D/online-valid.json.gz
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+dataplane.org:
+  paths:
+    allowlist:
+      - /dnsrd.txt
+      - /sipinvitation.txt
+      - /sshclient.txt
+      - /sshpwauth.txt
+      - /vncrfb.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+download.maxmind.com:
+  paths:
+    allowlist:
+      - /geoip/databases/GeoLite2-ASN-CSV
+      - /geoip/databases/GeoLite2-City-CSV
+      - /geoip/databases/GeoLite2-Country-CSV
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+downloads.majestic.com:
+  paths:
+    allowlist:
+      - /majestic_million.csv
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+emailrep.io:
+  paths:
+    allowlist:
+      - /%7Bemail%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+exploits.shodan.io:
+  paths:
+    allowlist:
+      - /api/search
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+feodotracker.abuse.ch:
+  paths:
+    allowlist:
+      - /downloads/ipblocklist.csv
+      - /downloads/ipblocklist.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+gist.githubusercontent.com:
+  paths:
+    allowlist:
+      - /tbrianjones/5992856/raw
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+github.com:
+  paths:
+    allowlist:
+      - /SigmaHQ/sigma/archive
+      - /Yara-Rules/rules/archive
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+gitlab.com:
+  paths:
+    allowlist:
+      - /exploit-database/exploitdb/-
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+haveibeenpwned.com:
+  paths:
+    allowlist:
+      - /api/v3/breaches
+      - /api/v3/pasteaccount
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+ip-ranges.amazonaws.com:
+  paths:
+    allowlist:
+      - /ip-ranges.json
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+ipgeolocation.abstractapi.com:
+  paths:
+    allowlist:
+      - /v1
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+ipinfo.io:
+  paths:
+    allowlist:
+      - /data/free/country_asn.csv.gz
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+iplists.firehol.org:
+  paths:
+    allowlist:
+      - /files/alienvault_reputation.ipset
+      - /files/botscout_1d.ipset
+      - /files/cleantalk_7d.ipset
+      - /files/cruzit_web_attacks.ipset
+      - /files/cybercrime.ipset
+      - /files/gpf_comics.ipset
+      - /files/nixspam.ipset
+      - /files/normshield_all_bruteforce.ipset
+      - /files/normshield_high_attack.ipset
+      - /files/packetmail_ramnode.ipset
+      - /files/php_spammers.ipset
+      - /files/sblam.ipset
+      - /files/talosintel_ipfilter.ipset
+      - /files/turris_greylist.ipset
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+ipqualityscore.com:
+  paths:
+    allowlist:
+      - /api/json/email
+      - /api/json/ip
+      - /api/json/url
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+jbxcloud.joesecurity.org:
+  paths:
+    allowlist:
+      - /api/v2/submission
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+leakcheck.io:
+  paths:
+    allowlist:
+      - /api/public
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+lists.blocklist.de:
+  paths:
+    allowlist:
+      - /lists/all.txt
+      - /lists/apache.txt
+      - /lists/bruteforcelogin.txt
+      - /lists/ftp.txt
+      - /lists/imap.txt
+      - /lists/ircbot.txt
+      - /lists/mail.txt
+      - /lists/pop3.txt
+      - /lists/sip.txt
+      - /lists/ssh.txt
+      - /lists/strongips.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+openphish.com:
+  paths:
+    allowlist:
+      - /feed.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+otx.alienvault.com:
+  paths:
+    allowlist:
+      - /api/v1/pulses
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+proxycheck.io:
+  paths:
+    allowlist:
+      - /v2/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+publicsuffix.org:
+  paths:
+    allowlist:
+      - /list/public_suffix_list.dat
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+pulsedive.com:
+  paths:
+    allowlist:
+      - /api/explore.php
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+raw.githubusercontent.com:
+  paths:
+    allowlist:
+      - /StevenBlack/hosts/master
+      - /anudeepND/blacklist/master
+      - /clarketm/proxy-list/master
+      - /disposable-email-domains/disposable-email-domains/master
+      - /drb-ra/C2IntelFeeds/master
+      - /firehol/blocklist-ipsets/master
+      - /mitre/cti/master
+      - /nickspaargaren/no-google/master
+      - /stamparm/ipsum/master
+      - /stamparm/maltrail/master
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+rules.emergingthreats.net:
+  paths:
+    allowlist:
+      - /blockrules/compromised-ips.txt
+      - /blockrules/emerging-tor.rules
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+s3-us-west-1.amazonaws.com:
+  paths:
+    allowlist:
+      - /umbrella-static/top-1m.csv.zip
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+s3.amazonaws.com:
+  paths:
+    allowlist:
+      - /alexa-static/top-1m.csv.zip
+      - /lists.disconnect.me/simple_ad.txt
+      - /lists.disconnect.me/simple_malware.txt
+      - /lists.disconnect.me/simple_tracking.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+search.censys.io:
+  paths:
+    allowlist:
+      - /api/v2/hosts
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+services.nvd.nist.gov:
+  paths:
+    allowlist:
+      - /rest/json/cpes
+      - /rest/json/cves
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+snort.org:
+  paths:
+    allowlist:
+      - /downloads/ip-block-list
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+sslbl.abuse.ch:
+  paths:
+    allowlist:
+      - /blacklist/ja3_fingerprints.csv
+      - /blacklist/sslblacklist.csv
+      - /blacklist/sslipblacklist.csv
+      - /blacklist/sslipblacklist.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+threatfox-api.abuse.ch:
+  paths:
+    allowlist:
+      - /api/v1
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+threatfox.abuse.ch:
+  paths:
+    allowlist:
+      - /export/csv/recent
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+tranco-list.eu:
+  paths:
+    allowlist:
+      - /top-1m.csv.zip
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+urlhaus.abuse.ch:
+  paths:
+    allowlist:
+      - /downloads/csv_recent
+      - /downloads/text_online
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+v.firebog.net:
+  paths:
+    allowlist:
+      - /hosts/Easylist.txt
+      - /hosts/Easyprivacy.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+v2.api.iphub.info:
+  paths:
+    allowlist:
+      - /ip/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+vpnapi.io:
+  paths:
+    allowlist:
+      - /api/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+vulners.com:
+  paths:
+    allowlist:
+      - /api/v3/search
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+vxvault.net:
+  paths:
+    allowlist:
+      - /URL_List.php
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.barracudacentral.org:
+  paths:
+    allowlist:
+      - /lookups
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.binarydefense.com:
+  paths:
+    allowlist:
+      - /banlist.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.bitcoinabuse.com:
+  paths:
+    allowlist:
+      - /api/reports/download
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.botvrij.eu:
+  paths:
+    allowlist:
+      - /data/ioclist.domain
+      - /data/ioclist.filename
+      - /data/ioclist.url
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.capesandbox.com:
+  paths:
+    allowlist:
+      - /apiv2/tasks/list
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.circl.lu:
+  paths:
+    allowlist:
+      - /pdns/query/%7Bdomain%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.cisa.gov:
+  paths:
+    allowlist:
+      - /sites/default/files
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.cloudflare.com:
+  paths:
+    allowlist:
+      - /ips-v4
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.darklist.de:
+  paths:
+    allowlist:
+      - /raw.php
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.dshield.org:
+  paths:
+    allowlist:
+      - /block.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.gstatic.com:
+  paths:
+    allowlist:
+      - /ipranges/cloud.json
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.hybrid-analysis.com:
+  paths:
+    allowlist:
+      - /api/v2/feed
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.ip2location.com:
+  paths:
+    allowlist:
+      - /download
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.nist.gov:
+  paths:
+    allowlist:
+      - /itl/ssd/software-quality-group
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.onyphe.io:
+  paths:
+    allowlist:
+      - /api/v2/simple
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.projecthoneypot.org:
+  paths:
+    allowlist:
+      - /ip/%7Bip%7D
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.spamhaus.org:
+  paths:
+    allowlist:
+      - /drop/asndrop.txt
+      - /drop/drop.txt
+      - /drop/dropv6.txt
+      - /drop/edrop.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.stopforumspam.com:
+  paths:
+    allowlist:
+      - /downloads/listed_ip_30.zip
+      - /downloads/toxic_ip_cidr.txt
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.virustotal.com:
+  paths:
+    allowlist:
+      - /api/v3/domains
+      - /api/v3/ip_addresses
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.voipbl.org:
+  paths:
+    allowlist:
+      - /update
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.whoisds.com:
+  paths:
+    allowlist:
+      - /whois-database/newly-registered-domains/download
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
+www.whoisxmlapi.com:
+  paths:
+    allowlist:
+      - /whoisserver/DNSService
+      - /whoisserver/WhoisService
+  headers:
+    allowlist:
+      - Accept
+      - Authorization
+      - Content-Type
+      - User-Agent
+      - X-API-Key
+  timeout: 30000
+
