@@ -51,6 +51,11 @@ These tools live in the sidebar and are designed to help teams migrate from othe
 | **Usage Dashboard** | Personal analytics — searches run, daily activity, datasets, feature adoption |
 | **Theme Builder** | Create and save custom color palettes for dashboard visualizations |
 | **LLM Skills Library** | Downloadable AI/LLM system prompts for KQL, dashboards, security, migration, and pipelines |
+| **Anonymizer** | Redact IPs, emails, credentials, PII from logs before sharing with support or AI tools |
+| **Wiz Viz** | AI-powered assistant — write KQL, design dashboards, hunt threats, get architecture advice |
+| **Demos & Training** | Build demo scenarios with vendor templates (Palo Alto, CrowdStrike, CloudTrail, K8s, Okta) |
+| **Diagnostics** | One-click health check: API connectivity, storage, environment; exportable report |
+| **Config Versions** | Snapshot, compare, restore, and share all app config between environments |
 
 ---
 
