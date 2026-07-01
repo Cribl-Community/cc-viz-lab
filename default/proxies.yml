@@ -40,6 +40,18 @@ ai.cribl.cloud:
 # additional remote source. Users without proxy access can still use the
 # Converter's "Paste responses" fallback — no allowlist entry needed.
 #
+# ── Cribl Pack Dispensary ───────────────────────────────────────────────
+#
+# Demos & Training → Dispensary tab fetches the public pack catalog.
+packs.cribl.io:
+  paths:
+    allowlist:
+      - /api/v1/packs/dispensary
+  headers:
+    allowlist:
+      - Accept
+  timeout: 15000
+
 # splunk.acme.com:
 #   paths:
 #     allowlist:
