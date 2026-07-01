@@ -56,6 +56,11 @@ These tools live in the sidebar and are designed to help teams migrate from othe
 | **Demos & Training** | Build demo scenarios with vendor templates (Palo Alto, CrowdStrike, CloudTrail, K8s, Okta) |
 | **Diagnostics** | One-click health check: API connectivity, storage, environment; exportable report |
 | **Config Versions** | Snapshot, compare, restore, and share all app config between environments |
+| **Query Translator** | Multi-language translator: SPL, ES|QL, LogQL, Sumo, Kibana KQL, SQL, Sigma → Cribl KQL |
+| **IOC Lookup** | Threat intel lookup (Shodan, AbuseIPDB, VirusTotal, GreyNoise) with pivot-to-search |
+| **Hunt Board** | Kanban threat hunting (Backlog → Active → Concluded → Promoted) with PEAK methodology |
+| **Dashboard Lifecycle** | Track maturity: Draft → Review → Published → Archived; owner + notes |
+| **Customize Sidebar** | Toggle sections on/off; hidden items remain in ⌘K command palette |
 
 ---
 
