@@ -42,6 +42,15 @@ These tools live in the sidebar and are designed to help teams migrate from othe
 | **Dataset Mapper** | Map legacy source names (Splunk indexes, Sumo partitions, etc.) to Cribl dataset names; auto-substitute in any pasted query |
 | **Tracker** | Track migration item status, blockers, and progress; export as Markdown or executive summary |
 | **Readiness Report** | One-click scored audit of all dashboards and saved searches — produces issues, recommendations, and a dataset inventory |
+| **Query Snippets** | Reusable KQL fragments with $FIELD placeholders; category filtering; one-click Use in Search |
+| **Pattern Advisor** | Decision-matrix tool — pick your scenario, get the recommended query + visualization + rationale |
+| **Run Book** | Operational procedures with numbered KQL steps; run each step directly in Search |
+| **Investigations** | Timeline-based incident tracking with hypotheses (confidence levels), findings, and query log |
+| **Data Dictionary** | Document fields across datasets with types, descriptions, and examples; import/export CSV |
+| **Performance Board** | Leaderboard ranking your queries by speed, frequency, rows, and efficiency |
+| **Usage Dashboard** | Personal analytics — searches run, daily activity, datasets, feature adoption |
+| **Theme Builder** | Create and save custom color palettes for dashboard visualizations |
+| **LLM Skills Library** | Downloadable AI/LLM system prompts for KQL, dashboards, security, migration, and pipelines |
 
 ---
 
