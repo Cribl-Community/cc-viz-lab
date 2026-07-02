@@ -18,9 +18,12 @@
 | Area | What you get |
 |------|----------------|
 | **Search** | KQL editor, time picker, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, annotations |
-| **Charts** | **103** built-in visualizations (listed below) + plugin gallery + your own plugins |
+| **Charts** | **55** core + **48** gallery = **103** built-in visualizations (listed below) + your own plugins |
 | **Dashboards** | Layout editor, parent/child searches, variables, versions, collaboration (when configured), export |
 | **Knowledge** | In-app shortcuts to lookups, parsers, regexes, grok, macros (same API as Search) |
+| **Performance** | Real-time search execution metrics, per-run timing, P95, snapshots, before/after comparison |
+| **AI** | Wiz Viz chat assistant, Investigate agent, Query Studio AI generation, LLM Skills library |
+| **Security** | Investigations timeline, Hunt Board (PEAK), IOC Lookup, Anonymizer |
 | **Theme** | Light/dark follows Cribl when embedded; manual override in standalone use |
 
 ---
@@ -60,6 +63,11 @@ These tools live in the sidebar and are designed to help teams migrate from othe
 | **IOC Lookup** | Threat intel lookup (Shodan, AbuseIPDB, VirusTotal, GreyNoise) with pivot-to-search |
 | **Hunt Board** | Kanban threat hunting (Backlog → Active → Concluded → Promoted) with PEAK methodology |
 | **Dashboard Lifecycle** | Track maturity: Draft → Review → Published → Archived; owner + notes |
+| **Query Studio** | Unified workspace: Library + Explain/Format + Diff/Optimize + Translate in one tabbed view |
+| **Performance Metrics** | Every search execution logged with ms timestamps, run grouping, P95, snapshots, export |
+| **Whiteboard** | Interactive Cribl architecture diagram (Sources → Stream → Destinations) with value stories |
+| **Lookup Manager** | Browse, create, edit, and test lookup tables used by the `lookup` operator |
+| **Productivity Hub** | App-state snapshots (backup/restore) and workflow recordings |
 | **Customize Sidebar** | Toggle sections on/off; hidden items remain in ⌘K command palette |
 
 ---
@@ -144,6 +152,26 @@ Bubble, Mixed, Polar Area, Radar, Scatter, Stacked Bar, **Nested Doughnut**, **S
 ![Stacked Area](../docs/images/viz/g-area-stacked.png)
 ![Floating Bar](../docs/images/viz/g-floating-bar.png)
 ![Timeline](../docs/images/viz/g-timeline.png)
+
+---
+
+## Workspace & productivity tools
+
+![Search home with datasets, history, and visualization picker](../docs/images/search-home.png)
+
+![Performance Metrics — KPI strip, run grouping, heatmap durations](../docs/images/search-performance.png)
+
+![Query Studio — snippets, explain, format, translate](../docs/images/query-studio.png)
+
+![Whiteboard — interactive Cribl architecture diagram](../docs/images/whiteboard.png)
+
+![Scaffold — guided wizard to build a whole dashboard from Markdown](../docs/images/scaffold.png)
+
+![Investigations — Timeline, Hunt Board, IOC Lookup](../docs/images/investigations.png)
+
+![Wiz Viz — conversational AI assistant](../docs/images/wiz-viz.png)
+
+![Productivity Hub — snapshots and recordings](../docs/images/productivity-hub.png)
 
 ---
 
