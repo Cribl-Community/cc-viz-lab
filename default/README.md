@@ -1,6 +1,6 @@
 # Viz Lab — what it does
 
-**Viz Lab** is a **Cribl Search** app. Run **KQL**, browse **Events** and **Fields**, pick a **Chart**, and build **Dashboards** with drag-and-drop panels. There is no separate "Data" hub here—use native Cribl Search for dataset administration if you need it.
+**Viz Lab** is a **Cribl Search** app. Run **KQL**, browse **Events** and **Fields**, pick a **Chart**, and build **Dashboards** with drag-and-drop panels — in grid or free-form **Canvas** layout. There is no separate "Data" hub here—use native Cribl Search for dataset administration if you need it.
 
 ---
 
@@ -9,7 +9,7 @@
 1. **Search** — Write KQL (or use Plain English if Copilot is available), set the **time range**, click **Search**.
 2. Open **Events** (raw rows), **Fields** (column stats), or **Chart** (pick a visualization on the right).
 3. Map your result columns to the chart's channels (dropdowns at the top of the viz panel). Use the small **chart icon** beside a viz name to load a **sample query** for that chart; then click **Search** again to run it.
-4. **Dashboards** — Create grids of panels, variables, tabs, and imports (Splunk XML, Cribl JSON, Viz Lab JSON). Use **+ Plugins** to add extra charts from the gallery or a URL.
+4. **Dashboards** — Create grids of panels, variables, tabs, and imports (Splunk XML/Studio, Sumo, Kibana, Grafana, Cribl JSON, Viz Lab JSON). Choose **Grid** or **Canvas** (free-form absolute positioning) layout when creating a new dashboard. Use **+ Plugins** to add extra charts from the gallery or a URL.
 
 ---
 
@@ -18,8 +18,9 @@
 | Area | What you get |
 |------|----------------|
 | **Search** | KQL editor, time picker, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, annotations |
-| **Charts** | **55** core + **48** gallery = **103** built-in visualizations (listed below) + your own plugins |
-| **Dashboards** | Layout editor, parent/child searches, variables, versions, collaboration (when configured), export |
+| **Charts** | **55** core + **49** gallery = **104** built-in visualizations (listed below) + your own plugins |
+| **Dashboards** | Grid and Canvas layout modes, parent/child searches, variables, versions, collaboration (when configured), export. Dashboard list shows a Grid/Canvas layout column with sidebar filter |
+| **Converters** | Dashboard import from **5 sources** (Splunk SimpleXML, Splunk Dashboard Studio, Sumo Logic, Kibana, Grafana). Query translator covers **7 languages** (SPL, ES\|QL, LogQL, Sumo Logic, Kibana KQL, SQL, Sigma) to Cribl KQL |
 | **Knowledge** | In-app shortcuts to lookups, parsers, regexes, grok, macros (same API as Search) |
 | **Performance** | Real-time search execution metrics, per-run timing, P95, snapshots, before/after comparison |
 | **AI** | Wiz Viz chat assistant, Investigate agent, Query Studio AI generation, LLM Skills library |
@@ -28,53 +29,102 @@
 
 ---
 
-## Migration & productivity tools
+## Sidebar — 30+ productivity & workspace tools
 
-These tools live in the sidebar and are designed to help teams migrate from other platforms to Cribl Search.
+All tools are accessible from the left sidebar (grouped into collapsible sections) and the command palette.
+
+### Search Home
 
 | Tool | What it does |
 |------|--------------|
+| **Run a search** | KQL editor with Plain English, time picker, Events/Fields/Chart tabs |
+
+### History
+
+| Tool | What it does |
+|------|--------------|
+| **History** | Browse and re-run previous searches |
+
+### Saved Searches
+
+| Tool | What it does |
+|------|--------------|
+| **All saved searches** | List, filter, and manage saved searches and collections |
+| **Search Converter** | Convert saved searches from Splunk SPL and other formats to Cribl KQL |
+
+### Dashboards
+
+| Tool | What it does |
+|------|--------------|
+| **All dashboards** | List with Grid/Canvas layout column, collection filter, tags, sort |
+| **Dashboard Converter** | Import dashboards from 5 sources: Splunk SimpleXML, Splunk Dashboard Studio, Sumo Logic, Kibana, Grafana |
 | **Dashboard Templates** | Start a new dashboard from a curated blueprint; save any dashboard as a custom template |
 | **Export for Cribl** | Convert a Viz Lab dashboard to Cribl wire JSON with a per-panel status report; push directly to a connected tenant |
 | **Bulk Export ZIP** | Select multiple dashboards and download them as a ZIP of Cribl JSON files |
-| **Dashboard Health Check** | Scan every dashboard for blank panels, missing variables, orphaned parent refs, and empty query variables |
+| **Health Check** | Scan every dashboard for blank panels, missing variables, orphaned parent refs, and empty query variables |
+
+### Utilities — Search & Query
+
+| Tool | What it does |
+|------|--------------|
+| **Query Studio** | Unified workspace: Library (snippets + templates) / Explain & Format / Diff & Optimize / Translate — one tabbed view |
+| **Query Translator** | 7-language translator: SPL, ES\|QL, LogQL, Sumo Logic, Kibana KQL, SQL, Sigma to Cribl KQL |
+
+### Utilities — Data & Knowledge
+
+| Tool | What it does |
+|------|--------------|
 | **Field Profiler** | Sample any dataset and get a full field-type, presence-rate, and sample-value breakdown. Auto-populates the dataset dropdown from your tenant's catalog |
-| **Query Library** | 24 curated KQL snippets for security, infrastructure, application, network, and compliance use cases |
-| **KQL Formatter** | Pretty-print or minify a KQL query — one pipe stage per line, indented subqueries |
-| **KQL Explainer** | Paste a KQL query and get an annotated version with `//` comments explaining each pipe stage above the original KQL line (Cribl AI when connected, heuristic otherwise) |
 | **Dataset Mapper** | Map legacy source names (Splunk indexes, Sumo partitions, etc.) to Cribl dataset names; auto-substitute in any pasted query |
-| **Tracker** | Track migration item status, blockers, and progress; export as Markdown or executive summary |
-| **Readiness Report** | One-click scored audit of all dashboards and saved searches — produces issues, recommendations, and a dataset inventory |
-| **Query Snippets** | Reusable KQL fragments with $FIELD placeholders; category filtering; one-click Use in Search |
-| **Pattern Advisor** | Decision-matrix tool — pick your scenario, get the recommended query + visualization + rationale |
-| **Run Book** | Operational procedures with numbered KQL steps; run each step directly in Search |
-| **Investigations** | Timeline-based incident tracking with hypotheses (confidence levels), findings, and query log |
-| **Data Dictionary** | Document fields across datasets with types, descriptions, and examples; import/export CSV |
-| **Performance Board** | Leaderboard ranking your queries by speed, frequency, rows, and efficiency |
-| **Usage Dashboard** | Personal analytics — searches run, daily activity, datasets, feature adoption |
-| **Theme Builder** | Create and save custom color palettes for dashboard visualizations |
-| **LLM Skills Library** | Downloadable AI/LLM system prompts for KQL, dashboards, security, migration, and pipelines |
-| **Anonymizer** | Redact IPs, emails, credentials, PII from logs before sharing with support or AI tools |
-| **Wiz Viz** | AI-powered assistant — write KQL, design dashboards, hunt threats, get architecture advice |
-| **Demos & Training** | Build demo scenarios with vendor templates (Palo Alto, CrowdStrike, CloudTrail, K8s, Okta) |
-| **Diagnostics** | One-click health check: API connectivity, storage, environment; exportable report |
-| **Config Versions** | Snapshot, compare, restore, and share all app config between environments |
-| **Query Translator** | Multi-language translator: SPL, ES|QL, LogQL, Sumo, Kibana KQL, SQL, Sigma → Cribl KQL |
-| **IOC Lookup** | Threat intel lookup (Shodan, AbuseIPDB, VirusTotal, GreyNoise) with pivot-to-search |
-| **Hunt Board** | Kanban threat hunting (Backlog → Active → Concluded → Promoted) with PEAK methodology |
-| **Dashboard Lifecycle** | Track maturity: Draft → Review → Published → Archived; owner + notes |
-| **Query Studio** | Unified workspace: Library + Explain/Format + Diff/Optimize + Translate in one tabbed view |
-| **Performance Metrics** | Every search execution logged with ms timestamps, run grouping, P95, snapshots, export |
-| **Whiteboard** | Interactive Cribl architecture diagram (Sources → Stream → Destinations) with value stories |
+| **Knowledge** | In-app shortcuts to lookups, parsers, regexes, grok, macros (same API as Search) |
 | **Lookup Manager** | Browse, create, edit, and test lookup tables used by the `lookup` operator |
+
+### Utilities — Security & Ops
+
+| Tool | What it does |
+|------|--------------|
+| **Investigations** | Timeline-based incident tracking with hypotheses (confidence levels), findings, query log, Hunt Board (PEAK kanban), and IOC Lookup (Shodan, AbuseIPDB, VirusTotal, GreyNoise) |
+| **Anonymizer** | Redact IPs, emails, credentials, PII from logs before sharing with support or AI tools |
+| **Run Book** | Operational procedures with numbered KQL steps; run each step directly in Search |
+
+### Utilities — AI & Automation
+
+| Tool | What it does |
+|------|--------------|
+| **Wiz Viz** | AI-powered assistant — write KQL, design dashboards, hunt threats, get architecture advice; includes LLM Skills library |
+
+### Utilities — Migration
+
+| Tool | What it does |
+|------|--------------|
+| **Tracker** | Track migration item status, blockers, and progress; export as Markdown or executive summary |
+
+### Utilities — Workspace
+
+| Tool | What it does |
+|------|--------------|
 | **Productivity Hub** | App-state snapshots (backup/restore) and workflow recordings |
-| **Customize Sidebar** | Toggle sections on/off; hidden items remain in ⌘K command palette |
+| **Usage Dashboard** | Personal analytics — searches run, daily activity, datasets, feature adoption |
+| **Whiteboard** | Interactive Cribl architecture diagram (Sources → Stream → Destinations) with value stories |
+| **Theme Builder** | Create and save custom color palettes for dashboard visualizations |
+| **Demos & Training** | Build demo scenarios with vendor templates (Palo Alto, CrowdStrike, CloudTrail, K8s, Okta) |
+| **Performance Metrics** | Every search execution logged with ms timestamps, run grouping, P95, snapshots, export |
+| **Diagnostics** | One-click health check: API connectivity, storage, environment; exportable report |
+
+### App-level
+
+| Tool | What it does |
+|------|--------------|
+| **App settings** | Global preferences, API connection, feature flags |
+| **Customize sidebar** | Toggle sections on/off; hidden items remain in the command palette |
+| **Packs** | Link to native Cribl Packs |
+| **Help** | In-app user guide and keyboard shortcuts |
 
 ---
 
-## Built-in visualizations (103)
+## Built-in visualizations (104)
 
-Viz Lab ships with **103 visualizations** across 7 categories. **+ Plugins** can add more from the gallery or custom ESM URLs.
+Viz Lab ships with **104 visualizations** across 7 categories. **+ Plugins** can add more from the gallery or custom ESM URLs.
 
 ### Basic Charts (24)
 
@@ -113,9 +163,9 @@ MITRE ATT&CK Matrix, Cyber Kill Chain Funnel, Detection Coverage Radar, Process 
 ![MITRE Matrix](../docs/images/viz/mitre-matrix.png)
 ![Detection Radar](../docs/images/viz/detection-radar.png)
 
-### Gallery — ECharts Extended (21)
+### Gallery — ECharts Extended (22)
 
-Theme River, Pictorial Bar, Wind Rose, Polar Scatter, Liquid Fill, **Nightingale Rose**, **Bar Race**, **Circular Graph**, **Sankey (Vertical)**, **3D Gauge**, **3D Funnel**, **3D Pie**, **Stacked Donut**, **Calendar Scatter**, **Radar (Polar)**, **Bubble Map**, **River Flow**, **Polar Bar**, **3D Globe (ECharts)**, **3D Scatter (ECharts)**
+Theme River, Pictorial Bar, Wind Rose, Polar Scatter, Liquid Fill, **Nightingale Rose**, **Bar Race**, **Circular Graph**, **Sankey (Vertical)**, **3D Gauge**, **3D Funnel**, **3D Pie**, **Stacked Donut**, **Calendar Scatter**, **Radar (Polar)**, **Bubble Map**, **River Flow**, **Polar Bar**, **3D Globe (ECharts)**, **3D Scatter (ECharts)**, **Radar Spider**, **Ring Gauge**
 
 ![Nightingale Rose](../docs/images/viz/g-nightingale.png)
 ![Bar Race](../docs/images/viz/g-bar-race.png)
@@ -128,7 +178,7 @@ Theme River, Pictorial Bar, Wind Rose, Polar Scatter, Liquid Fill, **Nightingale
 ![3D Pie](../docs/images/viz/g-pie-3d.png)
 ![3D Gauge](../docs/images/viz/g-gauge-3d.png)
 
-### Gallery — D3 (16)
+### Gallery — D3 (17)
 
 Force Bubbles, Hexbin, Radial Tree, Streamgraph, Word Cloud, Zoomable Sunburst, **Violin Plot**, **Beeswarm**, **Lollipop Chart**, **Arc Diagram**, **Packed Circles**, **Ridgeline Plot**, **Slope Chart**, **Waffle Chart**, **Dot Plot**, **Histogram**, **Marimekko**
 
@@ -144,7 +194,7 @@ Force Bubbles, Hexbin, Radial Tree, Streamgraph, Word Cloud, Zoomable Sunburst, 
 ![Histogram](../docs/images/viz/g-histogram.png)
 ![Marimekko](../docs/images/viz/g-marimekko.png)
 
-### Gallery — Chart.js (9)
+### Gallery — Chart.js (10)
 
 Bubble, Mixed, Polar Area, Radar, Scatter, Stacked Bar, **Nested Doughnut**, **Stacked Area**, **Floating Bar**, **Timeline**
 
