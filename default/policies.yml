@@ -77,3 +77,7 @@ policies:
     actions: ['POST']
   - object: '/master/groups/:gid/deploy'
     actions: ['PATCH']
+
+  # Guard / SDS rules (Anonymizer sync)
+  - object: '/m/:gid/lib/sds-rules'
+    actions: ['GET']
