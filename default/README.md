@@ -29,7 +29,7 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | **Knowledge** | Lookups, parsers, regexes, grok, macros, lookup manager |
 | **Investigate** | Timeline, Hunt Board (PEAK), IOC Lookup, Anonymizer, Run Book |
 | **Wiz Viz** | AI assistant for KQL, dashboards, threat hunting, architecture |
-| **More →** | Reports, Playbooks, Bulk Operations, Export Studio, Migration Wizard, ROI Calculator, Demos, Settings, Help, and 40+ more tools |
+| **More →** | Reports, Playbooks, Bulk Operations, Export Studio, Migration Wizard, ROI Calculator, Status Wall, Executive Mode, Notebooks, Demos, Settings, Help, and 50+ more tools |
 
 ---
 
@@ -46,7 +46,9 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | **Developer** | KQL Playground, KQL REPL, Regex Lab, Custom Functions, Plugin SDK, API Explorer, Data Lineage |
 | **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), NL Dashboard Generator |
 | **Cinema** | Time Player, Cinema Mode, Attack Cinema, Presentation Mode, Dashboard Annotations |
-| **AI** | Wiz Viz chat, Copilot NL→KQL, AI query generation, LLM Skills |
+| **NOC & Executive** | Status Wall (real-time health grid), Executive Mode (auto-cycling slides), Mobile Layout (responsive reflow) |
+| **AI Intelligence** | Panel Explain, Anomaly Narratives, Query Cost Estimator, Wiz Viz chat, Copilot NL→KQL |
+| **Cross-Dashboard** | Global Search, Dashboard Diff, Drill-Through Links, Multi-Tenant Views, Embedded Notebooks |
 | **Collaboration** | Real-time cursors (Yjs), version history, access control |
 | **Theme** | Auto dark/light from Cribl host; manual override in standalone |
 
@@ -86,7 +88,7 @@ Open **+ Plugins** on Search to install from the gallery or paste a trusted ESM 
 
 ---
 
-## Tools & Automation (65+)
+## Tools & Automation (77+)
 
 Viz Lab includes a full productivity suite accessible from the sidebar or via ⌘K:
 
@@ -97,6 +99,9 @@ Viz Lab includes a full productivity suite accessible from the sidebar or via �
 - **Analytics:** Anomaly detection, metric forecasting, capacity planning, cost optimization, SLA monitoring
 - **Migration:** Guided Splunk migration wizard, side-by-side SPL/KQL comparison, ROI calculator
 - **Cinema:** Animated time-based data playback, full-screen cinema mode, WarGames-style attack globe
+- **NOC & Executive:** Status Wall (real-time health grid), Executive Mode (auto-cycling lobby display), Mobile/Tablet responsive layouts
+- **AI Intelligence:** Panel Explain ("why did this spike?"), Anomaly Narratives (AI incident summaries), Query Cost Estimator (pre-run cost analysis)
+- **Cross-Dashboard:** Global Search, Dashboard Diff (version comparison), Drill-Through Links, Multi-Tenant Views (MSSP isolation), Embedded Notebooks, Investigation Templates
 
 ---
 
