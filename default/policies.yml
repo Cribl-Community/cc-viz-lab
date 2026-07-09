@@ -59,3 +59,21 @@ policies:
   # System metrics (System Monitoring page)
   - object: '/system/metrics'
     actions: ['GET']
+
+  # Demos & Training — samples, inputs, packs, version control, deploy
+  - object: '/m/:gid/system/samples'
+    actions: ['GET', 'POST', 'DELETE']
+  - object: '/m/:gid/system/samples/*'
+    actions: ['GET', 'DELETE']
+  - object: '/m/:gid/system/inputs'
+    actions: ['GET', 'POST']
+  - object: '/m/:gid/system/inputs/*'
+    actions: ['GET', 'PATCH', 'DELETE']
+  - object: '/m/:gid/packs'
+    actions: ['GET', 'POST', 'PUT']
+  - object: '/m/:gid/packs/*'
+    actions: ['GET', 'DELETE']
+  - object: '/m/:gid/version/commit'
+    actions: ['POST']
+  - object: '/master/groups/:gid/deploy'
+    actions: ['PATCH']
