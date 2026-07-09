@@ -1,13 +1,14 @@
 # Viz Lab
 
-A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Cribl Search](https://cribl.io/products/search/). It is a full **Search** workspace in the browser: run **KQL**, inspect **Events** and **Fields**, turn results into **Charts**, and compose **Dashboards** with variables, tabs, imports (Splunk XML, Cribl JSON, Viz Lab JSON), and collaboration where your org enables it. Light/dark **theme** follows Cribl when the app is embedded; you can override it when running standalone.
+A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Cribl Search](https://cribl.io/products/search/) with **104 built-in visualizations (55 core + 49 gallery plugins)**. It is a full **Search** workspace in the browser: run **KQL**, inspect **Events** and **Fields**, turn results into **Charts**, and compose **Dashboards** with variables, tabs, imports (Splunk XML, Cribl JSON, Viz Lab JSON), and collaboration where your org enables it. Light/dark **theme** follows Cribl when the app is embedded; you can override it when running standalone.
 
 ## What it does
 
 - **KQL search** — Editor with time range, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, and annotations. Optional **Cribl Copilot** flows (query/dashboard conversion) call Cribl AI when your deployment allows it.
 - **Results panes** — Switch between **Events** (raw rows), **Fields** (column stats), and **Chart**. Map result columns to visualization channels; many chart types include a **sample query** you can load and re-run.
-- **Charts** — **49** built-in visualizations (bars, lines, gauges, heatmaps, Sankey, geo, security views such as MITRE ATT&CK, and more). Extend the catalog with **+ Plugins** from the gallery or a trusted ESM URL (plugin code runs with full page permissions—only install sources you trust).
+- **Charts** — **104** built-in visualizations (bars, lines, gauges, heatmaps, Sankey, geo, security views such as MITRE ATT&CK, and more). Extend the catalog with **+ Plugins** from the gallery or a trusted ESM URL (plugin code runs with full page permissions—only install sources you trust).
 - **Dashboards** — Drag-and-drop layout, parent/child searches, variables, versions, and export. **Knowledge** shortcuts jump to lookups, parsers, regexes, Grok, and macros using the same APIs as native Search.
+- **65+ tools** — Security automation, KQL notebooks, anomaly detection, migration wizards, playbooks, bulk operations, data quality, lineage tracking, and more. Reachable via sidebar or ⌘K command palette.
 
 Dataset administration stays in native Cribl Search; Viz Lab focuses on running searches and building visuals on top of data you already have access to.
 
@@ -23,6 +24,8 @@ Dataset administration stays in native Cribl Search; Viz Lab focuses on running 
 ## More detail
 
 In-repo feature tour, visualization list, and plugin notes: [`default/README.md`](default/README.md).
+
+Feature overview for prospects: [`viz-lab-overview.md`](viz-lab-overview.md).
 
 ## License
 

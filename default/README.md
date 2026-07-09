@@ -29,7 +29,7 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | **Knowledge** | Lookups, parsers, regexes, grok, macros, lookup manager |
 | **Investigate** | Timeline, Hunt Board (PEAK), IOC Lookup, Anonymizer, Run Book |
 | **Wiz Viz** | AI assistant for KQL, dashboards, threat hunting, architecture |
-| **More →** | Field Profiler, Anonymizer, Whiteboard, Migration, Demos, Settings, Help |
+| **More →** | Reports, Playbooks, Bulk Operations, Export Studio, Migration Wizard, ROI Calculator, Demos, Settings, Help, and 40+ more tools |
 
 ---
 
@@ -40,7 +40,12 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | **Charts** | **104** built-in visualizations (55 core + 49 gallery) + custom plugins |
 | **Converters** | Import dashboards from 5 sources (Splunk XML/Studio, Sumo, Kibana, Grafana); translate queries from 7 languages |
 | **Canvas** | Free-form layout with drawing tools, photo editing, video/audio, particles, symmetry |
-| **Security** | MITRE ATT&CK, kill chain, detection radar, process tree, attack graph |
+| **Security** | Attack Simulator, Correlation Engine, Alert Builder, Auto-Investigate, Incident War Room, Attack Cinema (3D globe), PII Scanner, Compliance Mapper |
+| **Automation** | Playbooks, Scheduled Reports, Bulk Operations, Webhook Actions, Smart Alerts from Panels |
+| **Analytics** | Anomaly Detector, Metric Forecaster, Capacity Planner, Cost Optimizer, ROI Calculator, SLA Monitor, Data Quality |
+| **Developer** | KQL Playground, KQL REPL, Regex Lab, Custom Functions, Plugin SDK, API Explorer, Data Lineage |
+| **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), NL Dashboard Generator |
+| **Cinema** | Time Player, Cinema Mode, Attack Cinema, Presentation Mode, Dashboard Annotations |
 | **AI** | Wiz Viz chat, Copilot NL→KQL, AI query generation, LLM Skills |
 | **Collaboration** | Real-time cursors (Yjs), version history, access control |
 | **Theme** | Auto dark/light from Cribl host; manual override in standalone |
@@ -78,6 +83,20 @@ Bubble, Mixed, Polar Area, Radar, Scatter, Stacked Bar, Nested Doughnut, Stacked
 ## Plugins
 
 Open **+ Plugins** on Search to install from the gallery or paste a trusted ESM URL. Plugin code runs with full page permissions.
+
+---
+
+## Tools & Automation (65+)
+
+Viz Lab includes a full productivity suite accessible from the sidebar or via ⌘K:
+
+- **Security:** Attack simulation, correlation rules, alert authoring, automated investigation, incident war rooms, PII scanning
+- **Query tools:** KQL playground, REPL notebook, regex lab, custom macro functions, field mapping, schema exploration
+- **Automation:** If/then playbooks, scheduled report generation, bulk operations, webhook integrations
+- **Collaboration:** Panel comment threads, dashboard annotations, presentation mode, shareable snapshots, export studio
+- **Analytics:** Anomaly detection, metric forecasting, capacity planning, cost optimization, SLA monitoring
+- **Migration:** Guided Splunk migration wizard, side-by-side SPL/KQL comparison, ROI calculator
+- **Cinema:** Animated time-based data playback, full-screen cinema mode, WarGames-style attack globe
 
 ---
 
