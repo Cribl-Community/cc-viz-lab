@@ -5,6 +5,7 @@ A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Crib
 ## What it does
 
 - **KQL search** — Editor with time range, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, and annotations. Optional **Cribl Copilot** flows (query/dashboard conversion) call Cribl AI when your deployment allows it.
+- **✦ Insights** — Unified **Compose · Understand · Polish** rail on Search and Dashboard: live KQL coaching, `// Explain`, local result Explain, AI Data Story, and dashboard Tidy/Beautify/Style. **✦ Assist (⌘/Ctrl-J)** remains the deep expert for lint fixes and Cribl AI review.
 - **Results panes** — Switch between **Events** (raw rows), **Fields** (column stats), and **Chart**. Map result columns to visualization channels; many chart types include a **sample query** you can load and re-run.
 - **Charts** — **104** built-in visualizations (bars, lines, gauges, heatmaps, Sankey, geo, security views such as MITRE ATT&CK, and more). Extend the catalog with **+ Plugins** from the gallery or a trusted ESM URL (plugin code runs with full page permissions—only install sources you trust).
 - **Dashboards** — Drag-and-drop layout, parent/child searches, variables, versions, and export. **Knowledge** shortcuts jump to lookups, parsers, regexes, Grok, and macros using the same APIs as native Search.

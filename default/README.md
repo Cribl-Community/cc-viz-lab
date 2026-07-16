@@ -21,7 +21,7 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 
 | Item | What you get |
 |------|--------------|
-| **Search** | KQL editor, time picker, Plain English, Events/Fields/Chart, streaming, annotations |
+| **Search** | KQL editor, time picker, Plain English, Events/Fields/Chart, streaming, annotations, **✦ Insights** |
 | **History** | Re-run or fork any previous search |
 | **Saved** | Manage saved searches and collections; import/convert from Splunk and others |
 | **Dashboards** | List, create, import, templates, export, health check, collections |
@@ -47,7 +47,7 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), NL Dashboard Generator |
 | **Cinema** | Time Player, Cinema Mode, Attack Cinema, Presentation Mode, Dashboard Annotations |
 | **NOC & Executive** | Status Wall (real-time health grid), Executive Mode (auto-cycling slides), Mobile Layout (responsive reflow) |
-| **AI Intelligence** | Panel Explain, Anomaly Narratives, Query Cost Estimator, Wiz Viz chat, Copilot NL→KQL |
+| **AI Intelligence** | **✦ Insights** (Compose · Understand · Polish), Viz Lab Assist (⌘/Ctrl-J), Panel Explain, Anomaly Narratives, Query Cost Estimator, Wiz Viz chat, Copilot NL→KQL |
 | **Cross-Dashboard** | Global Search, Dashboard Diff, Drill-Through Links, Multi-Tenant Views, Embedded Notebooks |
 | **Collaboration** | Real-time cursors (Yjs), version history, access control |
 | **Theme** | Auto dark/light from Cribl host; manual override in standalone |
@@ -100,7 +100,7 @@ Viz Lab includes a full productivity suite accessible from the sidebar or via �
 - **Migration:** Guided Splunk migration wizard, side-by-side SPL/KQL comparison, ROI calculator
 - **Cinema:** Animated time-based data playback, full-screen cinema mode, WarGames-style attack globe
 - **NOC & Executive:** Status Wall (real-time health grid), Executive Mode (auto-cycling lobby display), Mobile/Tablet responsive layouts
-- **AI Intelligence:** Panel Explain ("why did this spike?"), Anomaly Narratives (AI incident summaries), Query Cost Estimator (pre-run cost analysis)
+- **AI Intelligence:** **✦ Insights** (live KQL coaching, result Explain, Data Story, dashboard Tidy/Beautify), Panel Explain ("why did this spike?"), Anomaly Narratives (AI incident summaries), Query Cost Estimator (pre-run cost analysis), **✦ Assist** (⌘/Ctrl-J) for deep expert review
 - **Cross-Dashboard:** Global Search, Dashboard Diff (version comparison), Drill-Through Links, Multi-Tenant Views (MSSP isolation), Embedded Notebooks, Investigation Templates
 
 ---
