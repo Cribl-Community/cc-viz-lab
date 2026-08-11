@@ -1,6 +1,6 @@
-# Viz Lab — what it does
+# Cribl Search Tools — what it does
 
-**Viz Lab** is a **Cribl Search** app. Run **KQL**, browse **Events** and **Fields**, pick a **Chart**, and build **Dashboards** — in grid or free-form **Canvas** layout. Everything is one or two clicks from the sidebar.
+**Cribl Search Tools** is a **Cribl Search** app. Run **KQL**, browse **Events** and **Fields**, pick a **Chart**, and build **Dashboards** — in grid or free-form **Canvas** layout. Everything is one or two clicks from the sidebar.
 
 ---
 
@@ -25,7 +25,7 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | **History** | Re-run or fork any previous search |
 | **Saved** | Manage saved searches and collections; import/convert from Splunk and others |
 | **Dashboards** | List, create, import, templates, export, health check, collections |
-| **Query Studio** | Library + Explain + Format + Translate (7 languages) + Diff — all in one tabbed view |
+| **Query Studio** | Library + Explain + Format + Translate (11 languages) + Diff — all in one tabbed view |
 | **Knowledge** | Lookups, parsers, regexes, grok, macros, lookup manager |
 | **Investigate** | Timeline, Hunt Board (PEAK), IOC Lookup, Anonymizer, Run Book |
 | **Wiz Viz** | AI assistant for KQL, dashboards, threat hunting, architecture |
@@ -38,7 +38,7 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | Area | Highlights |
 |------|------------|
 | **Charts** | **104** built-in visualizations (55 core + 49 gallery) + custom plugins |
-| **Converters** | Import dashboards from 5 sources (Splunk XML/Studio, Sumo, Kibana, Grafana); translate queries from 7 languages |
+| **Converters** | Import dashboards from 8 sources (Splunk XML/Studio, Sumo, Kibana/Elastic, Grafana, Datadog, New Relic, LogRhythm); translate queries from 11 languages |
 | **Canvas** | Free-form layout with drawing tools, photo editing, video/audio, particles, symmetry |
 | **Security** | Attack Simulator, Correlation Engine, Alert Builder, Auto-Investigate, Incident War Room, Attack Cinema (3D globe), PII Scanner, Compliance Mapper |
 | **Automation** | Playbooks, Scheduled Reports, Bulk Operations, Webhook Actions, Smart Alerts from Panels |
@@ -47,7 +47,7 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), NL Dashboard Generator |
 | **Cinema** | Time Player, Cinema Mode, Attack Cinema, Presentation Mode, Dashboard Annotations |
 | **NOC & Executive** | Status Wall (real-time health grid), Executive Mode (auto-cycling slides), Mobile Layout (responsive reflow) |
-| **AI Intelligence** | **✦ Insights** (Compose · Understand · Polish), Viz Lab Assist (⌘/Ctrl-J), Panel Explain, Anomaly Narratives, Query Cost Estimator, Wiz Viz chat, Copilot NL→KQL |
+| **AI Intelligence** | **✦ Insights** (Compose · Understand · Polish), Cribl Search Tools Assist (⌘/Ctrl-J), Panel Explain, Anomaly Narratives, Query Cost Estimator, Wiz Viz chat, Copilot NL→KQL |
 | **Cross-Dashboard** | Global Search, Dashboard Diff, Drill-Through Links, Multi-Tenant Views, Embedded Notebooks |
 | **Collaboration** | Real-time cursors (Yjs), version history, access control |
 | **Theme** | Auto dark/light from Cribl host; manual override in standalone |
@@ -90,7 +90,7 @@ Open **+ Plugins** on Search to install from the gallery or paste a trusted ESM 
 
 ## Tools & Automation (77+)
 
-Viz Lab includes a full productivity suite accessible from the sidebar or via ⌘K:
+Cribl Search Tools includes a full productivity suite accessible from the sidebar or via ⌘K:
 
 - **Security:** Attack simulation, correlation rules, alert authoring, automated investigation, incident war rooms, PII scanning
 - **Query tools:** KQL playground, REPL notebook, regex lab, custom macro functions, field mapping, schema exploration

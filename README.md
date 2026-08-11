@@ -1,6 +1,6 @@
-# Viz Lab
+# Cribl Search Tools
 
-A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Cribl Search](https://cribl.io/products/search/) with **104 built-in visualizations (55 core + 49 gallery plugins)**. It is a full **Search** workspace in the browser: run **KQL**, inspect **Events** and **Fields**, turn results into **Charts**, and compose **Dashboards** with variables, tabs, imports (Splunk XML, Cribl JSON, Viz Lab JSON), and collaboration where your org enables it. Light/dark **theme** follows Cribl when the app is embedded; you can override it when running standalone.
+A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Cribl Search](https://cribl.io/products/search/) with **104 built-in visualizations (55 core + 49 gallery plugins)**. It is a full **Search** workspace in the browser: run **KQL**, inspect **Events** and **Fields**, turn results into **Charts**, and compose **Dashboards** with variables, tabs, imports (Splunk XML, Cribl JSON, Cribl Search Tools JSON), and collaboration where your org enables it. Light/dark **theme** follows Cribl when the app is embedded; you can override it when running standalone.
 
 ## What it does
 
@@ -11,12 +11,12 @@ A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Crib
 - **Dashboards** — Drag-and-drop layout, parent/child searches, variables, versions, and export. **Knowledge** shortcuts jump to lookups, parsers, regexes, Grok, and macros using the same APIs as native Search.
 - **77+ tools** — Security automation, KQL notebooks, anomaly detection, migration wizards, playbooks, bulk operations, data quality, lineage tracking, and more. Reachable via sidebar or ⌘K command palette.
 
-Dataset administration stays in native Cribl Search; Viz Lab focuses on running searches and building visuals on top of data you already have access to.
+Dataset administration stays in native Cribl Search; Cribl Search Tools focuses on running searches and building visuals on top of data you already have access to.
 
 ## Installing
 
 1. In [Cribl Cloud](https://cribl.io/cloud/), open **Cribl Search**, go to **App Platform → Add App → Import from Git**, and paste this URL: `https://github.com/criblapps/viz-lab`.
-2. Open **Viz Lab** from the app launcher. No extra app configuration is required for everyday search and dashboards.
+2. Open **Cribl Search Tools** from the app launcher. No extra app configuration is required for everyday search and dashboards.
 
 **Private Git repositories** — Use your platform’s Git import flow with credentials (for example an HTTPS URL that includes a personal access token), and pick a **branch** if you need two-way sync; tags are typically read-only.
 
@@ -25,8 +25,6 @@ Dataset administration stays in native Cribl Search; Viz Lab focuses on running 
 ## More detail
 
 In-repo feature tour, visualization list, and plugin notes: [`default/README.md`](default/README.md).
-
-Feature overview for prospects: [`viz-lab-overview.md`](viz-lab-overview.md).
 
 ## License
 
