@@ -21,20 +21,13 @@ The sidebar uses expandable groups. Everything is also reachable via **⌘K** (C
 
 | Group | What you get |
 |-------|--------------|
-| **Search** | KQL editor, time picker, Plain English → KQL, Events/Fields/Chart, streaming, annotations, **✦ Insights**, Saved Searches, Convert Searches, Value Scorecard |
-| **Metrics** | Summary/catalog, PromQL Explorer (multi-query), Migration (vendor query conversion + log-to-metrics extraction) |
-| **Monitors** | Monitor CRUD, Active Alerts, Muting Rules, Notifications, Presets |
-| **Dashboards** | My Dashboards, Collections, Convert Dashboards (8 vendors) |
-| **History** | Re-run or fork any previous search |
-| **Utilities** | Operations, Dashboard Health, Search Health, Dataset Intelligence, Performance, Anonymizer, Regex Editor, Architecture diagrams, Snapshots, Data Tiering |
-| **Security** | Detections, Investigations, War Room, Attack Simulator, Attack Cinema (3D globe), PII Scanner, Playbooks |
-| **Developer** | KQL REPL, Schema Explorer, API Explorer, Custom Functions, Plugin SDK, Field Mapper, Webhooks, Notebooks, KQL Formatter, Query Templates, Query Workbench |
-| **Analytics** | Anomaly Detector, Forecaster, Data Quality, Data Journey, Field Lineage, Cost Optimizer/Estimator, TCO Comparison, Capacity Planner, ROI Calculator, Dashboard Lifecycle, Query Leaderboard |
-| **Ops & Compliance** | SLA Monitor, Change Tracker, Report Builder, Status Wall, Executive Mode, Multi-Tenant, Drill-Through, Mobile Layout, Config Versions, Migration Readiness |
-| **More** | Productivity Hub, Usage Analytics, AI Dashboard Builder, Global Search, Migration Wizard, Dashboard Diff |
-| **Knowledge** | Lookups, parsers, regexes, grok, macros |
-| **Cribl Copilot** | AI assistant for KQL, dashboards, and architecture |
-| **Guided Tours** | Interactive walkthroughs and demo scenarios |
+| **Search** | New Search, Saved Searches, History, Knowledge (lookups/parsers/regex/grok/macros), Notebooks, Query Workbench |
+| **Metrics** | Overview, Explorer (PromQL multi-query), Monitors, Active Alerts, Muting Rules, Migration (vendor conversion + Grafana import) |
+| **Dashboards** | My Dashboards, Collections, Convert (8 vendors), Health, Diff, Snapshots |
+| **Security** | Detections, Investigations, Incident War Room, Attack Simulator, PII Scanner, Playbooks |
+| **Tools** | KQL REPL, Regex Lab, Schema Explorer, Anonymizer, Field Mapper, Data Quality |
+| **Operations** | Overview, Status Wall, Executive Mode, Reports, SLA Monitor, Change Tracker, Multi-Tenant, Mobile Layout |
+| **Copilot** | AI assistant for KQL, dashboards, and architecture |
 | **Help & Docs** | Documentation, keyboard shortcuts, about |
 | **Settings** | Theme, connections, preferences |
 
