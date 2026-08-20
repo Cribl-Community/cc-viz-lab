@@ -15,21 +15,28 @@ Press **⌘K** (Ctrl+K) anytime to jump to any page, dashboard, saved search, or
 
 ---
 
-## Sidebar (flat — no scrolling)
+## Sidebar
 
-The sidebar shows 8 primary items. Everything else lives under **More** or is reachable via ⌘K.
+The sidebar uses expandable groups. Everything is also reachable via **⌘K** (Command Palette).
 
-| Item | What you get |
-|------|--------------|
-| **Search** | KQL editor, time picker, Plain English, Events/Fields/Chart, streaming, annotations, **✦ Insights** |
+| Group | What you get |
+|-------|--------------|
+| **Search** | KQL editor, time picker, Plain English → KQL, Events/Fields/Chart, streaming, annotations, **✦ Insights**, Saved Searches, Convert Searches, Value Scorecard |
+| **Metrics** | Summary/catalog, PromQL Explorer (multi-query), Migration (vendor query conversion + log-to-metrics extraction) |
+| **Monitors** | Monitor CRUD, Active Alerts, Muting Rules, Notifications, Presets |
+| **Dashboards** | My Dashboards, Collections, Convert Dashboards (8 vendors) |
 | **History** | Re-run or fork any previous search |
-| **Saved** | Manage saved searches and collections; import/convert from Splunk and others |
-| **Dashboards** | List, create, import, templates, export, health check, collections |
-| **Query Studio** | Library + Explain + Format + Translate (11 languages) + Diff — all in one tabbed view |
-| **Knowledge** | Lookups, parsers, regexes, grok, macros, lookup manager |
-| **Investigate** | Timeline, Hunt Board (PEAK), IOC Lookup, Anonymizer, Run Book |
-| **Wiz Viz** | AI assistant for KQL, dashboards, threat hunting, architecture |
-| **More →** | Reports, Playbooks, Bulk Operations, Export Studio, Migration Wizard, ROI Calculator, Status Wall, Executive Mode, Notebooks, Demos, Settings, Help, and 50+ more tools |
+| **Utilities** | Operations, Dashboard Health, Search Health, Dataset Intelligence, Performance, Anonymizer, Regex Editor, Architecture diagrams, Snapshots, Data Tiering |
+| **Security** | Detections, Investigations, War Room, Attack Simulator, Attack Cinema (3D globe), PII Scanner, Playbooks |
+| **Developer** | KQL REPL, Schema Explorer, API Explorer, Custom Functions, Plugin SDK, Field Mapper, Webhooks, Notebooks, KQL Formatter, Query Templates, Query Workbench |
+| **Analytics** | Anomaly Detector, Forecaster, Data Quality, Data Journey, Field Lineage, Cost Optimizer/Estimator, TCO Comparison, Capacity Planner, ROI Calculator, Dashboard Lifecycle, Query Leaderboard |
+| **Ops & Compliance** | SLA Monitor, Change Tracker, Report Builder, Status Wall, Executive Mode, Multi-Tenant, Drill-Through, Mobile Layout, Config Versions, Migration Readiness |
+| **More** | Productivity Hub, Usage Analytics, AI Dashboard Builder, Global Search, Migration Wizard, Dashboard Diff |
+| **Knowledge** | Lookups, parsers, regexes, grok, macros |
+| **Cribl Copilot** | AI assistant for KQL, dashboards, and architecture |
+| **Guided Tours** | Interactive walkthroughs and demo scenarios |
+| **Help & Docs** | Documentation, keyboard shortcuts, about |
+| **Settings** | Theme, connections, preferences |
 
 ---
 
@@ -38,17 +45,17 @@ The sidebar shows 8 primary items. Everything else lives under **More** or is re
 | Area | Highlights |
 |------|------------|
 | **Charts** | **104** built-in visualizations (55 core + 49 gallery) + custom plugins |
+| **Metrics** | PromQL-compatible Explorer, metric catalog/summary, monitors, active alerts, muting rules, notifications, presets, migration from PromQL/Datadog/Splunk, log-to-metrics extraction |
 | **Converters** | Import dashboards from 8 sources (Splunk XML/Studio, Sumo, Kibana/Elastic, Grafana, Datadog, New Relic, LogRhythm); translate queries from 11 languages |
 | **Canvas** | Free-form layout with drawing tools, photo editing, video/audio, particles, symmetry |
-| **Security** | Attack Simulator, Correlation Engine, Alert Builder, Auto-Investigate, Incident War Room, Attack Cinema (3D globe), PII Scanner, Compliance Mapper |
-| **Automation** | Playbooks, Scheduled Reports, Bulk Operations, Webhook Actions, Smart Alerts from Panels |
-| **Analytics** | Anomaly Detector, Metric Forecaster, Capacity Planner, Cost Optimizer, ROI Calculator, SLA Monitor, Data Quality |
-| **Developer** | KQL Playground, KQL REPL, Regex Lab, Custom Functions, Plugin SDK, API Explorer, Data Lineage |
-| **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), NL Dashboard Generator |
-| **Cinema** | Time Player, Cinema Mode, Attack Cinema, Presentation Mode, Dashboard Annotations |
+| **Security** | Detections, Investigations, Incident War Room, Attack Simulator, Attack Cinema (3D globe), PII Scanner, Playbooks |
+| **Automation** | Scheduled Reports, Bulk Operations, Webhook Actions, Drill-Through Links |
+| **Analytics** | Anomaly Detector, Forecaster, Data Quality, Data Journey, Field Lineage, Cost Optimizer, ROI Calculator, Capacity Planner, TCO Comparison |
+| **Developer** | KQL REPL, Schema Explorer, API Explorer, Custom Functions, Plugin SDK, Field Mapper, Webhooks, Notebooks, KQL Formatter, Query Templates, Query Workbench |
+| **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), AI Dashboard Builder, Migration Readiness |
 | **NOC & Executive** | Status Wall (real-time health grid), Executive Mode (auto-cycling slides), Mobile Layout (responsive reflow) |
-| **AI Intelligence** | **✦ Insights** (Compose · Understand · Polish), Cribl Search Tools Assist (⌘/Ctrl-J), Panel Explain, Anomaly Narratives, Query Cost Estimator, Wiz Viz chat, Copilot NL→KQL |
-| **Cross-Dashboard** | Global Search, Dashboard Diff, Drill-Through Links, Multi-Tenant Views, Embedded Notebooks |
+| **AI Intelligence** | **✦ Insights** (Compose · Understand · Polish), Cribl Search Tools Assist (⌘/Ctrl-J), Copilot NL→KQL, Query Cost Estimator |
+| **Cross-Dashboard** | Global Search, Dashboard Diff, Drill-Through Links, Multi-Tenant Views, Dashboard Lifecycle |
 | **Collaboration** | Real-time cursors (Yjs), version history, access control |
 | **Theme** | Auto dark/light from Cribl host; manual override in standalone |
 
