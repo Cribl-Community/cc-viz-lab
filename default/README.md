@@ -24,8 +24,8 @@ The sidebar uses expandable groups. Everything is also reachable via **⌘K** (C
 | **Search** | New Search, Saved Searches, History, Knowledge (lookups/parsers/regex/grok/macros), Notebooks, Query Workbench |
 | **Metrics** | Overview, Explorer (PromQL multi-query), Monitors, Active Alerts, Muting Rules, Migration (vendor conversion + Grafana import) |
 | **Dashboards** | My Dashboards, Collections, Convert (8 vendors), Health, Diff, Snapshots |
-| **Security** | Detections, Investigations, Incident War Room, Attack Simulator, PII Scanner, Playbooks |
-| **Tools** | KQL REPL, Regex Lab, Schema Explorer, Anonymizer, Field Mapper, Data Quality |
+| **Security** | Detections, Investigations, Incident War Room, Attack Simulator, Playbooks |
+| **Tools** | KQL REPL, Regex Lab, Schema Explorer, PII & Guard Scanner (with Cribl Guard sync), Field Mapper, Data Quality |
 | **Operations** | Overview, Status Wall, Executive Mode, Reports, SLA Monitor, Change Tracker, Multi-Tenant, Mobile Layout |
 | **Copilot** | AI assistant for KQL, dashboards, and architecture |
 | **Help & Docs** | Documentation, keyboard shortcuts, about |
