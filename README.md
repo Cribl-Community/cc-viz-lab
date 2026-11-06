@@ -4,7 +4,7 @@ A [Cribl App Platform](https://docs.cribl.io/stream/app-platform/) app for [Crib
 
 ## What it does
 
-- **KQL search** — Editor with time range, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, and annotations. Optional **Cribl Copilot** flows (query/dashboard conversion) call Cribl AI when your deployment allows it.
+- **KQL search** — Editor with time range, sampling, history, saved searches, CSV/NDJSON export, optional streaming rows, and annotations. Optional **Billy** flows (query/dashboard conversion) call Cribl AI when your deployment allows it.
 - **✦ Insights** — Unified **Compose · Understand · Polish** rail on Search and Dashboard: live KQL coaching, `// Explain`, local result Explain, AI Data Story, and dashboard Tidy/Beautify/Style. **✦ Assist (⌘/Ctrl-J)** remains the deep expert for lint fixes and Cribl AI review.
 - **Results panes** — Switch between **Events** (raw rows), **Fields** (column stats), and **Chart**. Map result columns to visualization channels; many chart types include a **sample query** you can load and re-run.
 - **Charts** — **104** built-in visualizations (bars, lines, gauges, heatmaps, Sankey, geo, security views such as MITRE ATT&CK, and more). Extend the catalog with **+ Plugins** from the gallery or a trusted ESM URL (plugin code runs with full page permissions—only install sources you trust).
@@ -20,7 +20,7 @@ Dataset administration stays in native Cribl Search; Cribl Search Tools focuses 
 
 **Private Git repositories** — Use your platform’s Git import flow with credentials (for example an HTTPS URL that includes a personal access token), and pick a **branch** if you need two-way sync; tags are typically read-only.
 
-**Admins** — Outbound calls are declared in [`default/proxies.yml`](default/proxies.yml). The repo ships with an allowlist for **Cribl Copilot** (`ai.cribl.cloud`). To use **live** Splunk REST pulls from the Search or Dashboard converter, uncomment and edit the Splunk host blocks in that file before you package or import the app so the platform proxy can allow those hosts.
+**Admins** — Outbound calls are declared in [`default/proxies.yml`](default/proxies.yml). The repo ships with an allowlist for **Billy** (`ai.cribl.cloud`). To use **live** Splunk REST pulls from the Search or Dashboard converter, uncomment and edit the Splunk host blocks in that file before you package or import the app so the platform proxy can allow those hosts.
 
 ## More detail
 
