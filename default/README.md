@@ -27,7 +27,7 @@ The sidebar uses expandable groups. Everything is also reachable via **⌘K** (C
 | **Security** | Detections, Investigations, Incident War Room, Attack Simulator, Playbooks |
 | **Tools** | KQL REPL, Regex Lab, Schema Explorer, PII & Guard Scanner (with Cribl Guard sync), Field Mapper, Data Quality |
 | **Operations** | Overview, Status Wall, Executive Mode, Reports, SLA Monitor, Change Tracker, Multi-Tenant, Mobile Layout |
-| **Copilot** | AI assistant for KQL, dashboards, and architecture |
+| **Billy** | AI assistant for KQL, dashboards, and architecture |
 | **Help & Docs** | Documentation, keyboard shortcuts, about |
 | **Settings** | Theme, connections, preferences |
 
@@ -47,7 +47,7 @@ The sidebar uses expandable groups. Everything is also reachable via **⌘K** (C
 | **Developer** | KQL REPL, Schema Explorer, API Explorer, Custom Functions, Plugin SDK, Field Mapper, Webhooks, Notebooks, KQL Formatter, Query Templates, Query Workbench |
 | **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), AI Dashboard Builder, Migration Readiness |
 | **NOC & Executive** | Status Wall (real-time health grid), Executive Mode (auto-cycling slides), Mobile Layout (responsive reflow) |
-| **AI Intelligence** | **✦ Insights** (Compose · Understand · Polish), Cribl Search Tools Assist (⌘/Ctrl-J), Copilot NL→KQL, Query Cost Estimator |
+| **AI Intelligence** | **✦ Insights** (Compose · Understand · Polish), Cribl Search Tools Assist (⌘/Ctrl-J), Billy NL→KQL, Query Cost Estimator |
 | **Cross-Dashboard** | Global Search, Dashboard Diff, Drill-Through Links, Multi-Tenant Views, Dashboard Lifecycle |
 | **Collaboration** | Real-time cursors (Yjs), version history, access control |
 | **Theme** | Auto dark/light from Cribl host; manual override in standalone |
