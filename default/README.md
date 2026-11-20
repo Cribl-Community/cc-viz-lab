@@ -19,17 +19,15 @@ Press **⌘K** (Ctrl+K) anytime to jump to any page, dashboard, saved search, or
 
 The sidebar uses expandable groups. Everything is also reachable via **⌘K** (Command Palette).
 
-| Group | What you get |
-|-------|--------------|
+| Item | What you get |
+|------|--------------|
 | **Search** | New Search, Saved Searches, History, Knowledge (lookups/parsers/regex/grok/macros), Notebooks, Query Workbench |
-| **Metrics** | Overview, Explorer (PromQL multi-query), Monitors, Active Alerts, Muting Rules, Migration (vendor conversion + Grafana import) |
-| **Dashboards** | My Dashboards, Collections, Convert (8 vendors), Health, Diff, Snapshots |
-| **Security** | Detections, Investigations, Incident War Room, Attack Simulator, Playbooks |
-| **Tools** | KQL REPL, Regex Lab, Schema Explorer, PII & Guard Scanner (with Cribl Guard sync), Field Mapper, Data Quality |
-| **Operations** | Overview, Status Wall, Executive Mode, Reports, SLA Monitor, Change Tracker, Multi-Tenant, Mobile Layout |
+| **Dashboards** | My Dashboards, Collections, Health, Diff, Snapshots |
+| **Migrate** | Overview, Translate Queries, Convert Dashboards (9 vendors), Metrics Migration |
+| **Utilities** | Regex & Guard, Schema Explorer, Field Mapper, Data Quality, Architecture, Export & Backup, Bulk Operations, Search Health, Dataset Intelligence, Search Environment, Performance, Anonymizer |
 | **Billy** | AI assistant for KQL, dashboards, and architecture |
 | **Help & Docs** | Documentation, keyboard shortcuts, about |
-| **Settings** | Theme, connections, preferences |
+| **Settings** | Theme, connections, mobile layout, preferences |
 
 ---
 
@@ -37,12 +35,12 @@ The sidebar uses expandable groups. Everything is also reachable via **⌘K** (C
 
 | Area | Highlights |
 |------|------------|
-| **Charts** | **104** built-in visualizations (55 core + 49 gallery) + custom plugins |
-| **Metrics** | PromQL-compatible Explorer, metric catalog/summary, monitors, active alerts, muting rules, notifications, presets, migration from PromQL/Datadog/Splunk, log-to-metrics extraction |
-| **Converters** | Import dashboards from 8 sources (Splunk XML/Studio, Sumo, Kibana/Elastic, Grafana, Datadog, New Relic, LogRhythm); translate queries from 11 languages |
+| **Charts** | **102** built-in visualizations (55 core + 47 gallery) + custom plugins |
+| **Metrics** (via ⌘K — hidden from the sidebar for now) | PromQL-compatible Explorer, metric catalog/summary, monitors, active alerts, muting rules, notifications, presets, migration from PromQL/Datadog/Splunk, log-to-metrics extraction |
+| **Converters** | Import dashboards from 9 vendors (Splunk XML/Studio, Sumo, Kibana/Elastic, Grafana, Datadog, New Relic, LogRhythm, Exabeam, CrowdStrike Falcon LogScale) plus Cribl JSON; convert queries from 12 languages |
 | **Canvas** | Free-form layout with drawing tools, photo editing, video/audio, particles, symmetry |
-| **Security** | Detections, Investigations, Incident War Room, Attack Simulator, Attack Cinema (3D globe), PII Scanner, Playbooks |
-| **Automation** | Scheduled Reports, Bulk Operations, Webhook Actions, Drill-Through Links |
+| **Security** | 10 security visualizations (MITRE ATT&CK, kill chain, attack path, 3D globe, …), Compliance Mapper, Anomaly Narratives, Anonymizer / Cribl Guard scanning |
+| **Automation** | Scheduled Reports, Bulk Operations, Export & Backup, Webhook Actions, Drill-Through Links |
 | **Analytics** | Anomaly Detector, Forecaster, Data Quality, Data Journey, Field Lineage, Cost Optimizer, ROI Calculator, Capacity Planner, TCO Comparison |
 | **Developer** | KQL REPL, Schema Explorer, API Explorer, Custom Functions, Plugin SDK, Field Mapper, Webhooks, Notebooks, KQL Formatter, Query Templates, Query Workbench |
 | **Migration** | Splunk Migration Wizard (6-step), Side-by-Side Compare (SPL vs KQL), AI Dashboard Builder, Migration Readiness |
@@ -54,10 +52,12 @@ The sidebar uses expandable groups. Everything is also reachable via **⌘K** (C
 
 ---
 
-## Built-in visualizations (104)
+## Built-in visualizations (102)
+
+55 core visualizations plus 47 gallery plugins.
 
 ### Basic (24)
-Column, Bar, Radial Bar, Line, Bump, Area, Pie, Donut, Scatter, Bubble, Single Value, Arc Gauge, Table, Events, KPI Strip, Radial/Marker/Speedometer/Liquid/Linear Gauge, Honeycomb, Status Tiles, Status Grid, Funnel
+Column, Horizontal Bar, Radial Bar, Line, Bump, Area, Pie, Donut, Scatter, Bubble, Single Value, Arc Gauge, Table, Events, KPI Strip, Radial/Marker/Speedometer/Liquid Fill/Linear Gauge, Honeycomb Status, App Status Tiles, Status Grid, Funnel
 
 ### Statistical & Time-Series (9)
 Heatmap, Box Plot, Parallel Coordinates, Calendar Heatmap, Candlestick, Waterfall, Dumbbell, Bullet, Gantt
@@ -65,20 +65,20 @@ Heatmap, Box Plot, Parallel Coordinates, Calendar Heatmap, Candlestick, Waterfal
 ### Networks & Hierarchies (7)
 Sankey, Network Graph, Chord, Flow (React Flow), Tree, Treemap, Sunburst
 
-### Geo & 3D (8)
-Isometric Bars, 3D Scatter, 3D Surface, 3D Network, Geo Choropleth, Globe (Three.js)
+### Geo & 3D (5)
+Isometric Bars, 3D Scatter, 3D Surface, 3D Network, Geo Choropleth
 
-### Security (9)
-MITRE ATT&CK Matrix, Kill Chain Funnel, Detection Radar, Process Tree, Attack Graph, Auth Heatmap, Geo Attack Flows, Alert Correlation, IOC Streamgraph
+### Security (10)
+MITRE ATT&CK Matrix, Cyber Kill Chain, Detection Coverage Radar, Process Lineage, Attack Path Graph, Auth Anomaly Heatmap, Geo Attack Flows, 3D Globe, Alert Correlation, IOC Velocity
 
-### Gallery — ECharts (22)
-Theme River, Pictorial Bar, Wind Rose, Polar Scatter, Liquid Fill, Nightingale Rose, Bar Race, Circular Graph, Sankey Vertical, 3D Gauge/Funnel/Pie, Stacked Donut, Calendar Scatter, Radar Polar, Bubble Map, River Flow, Polar Bar, 3D Globe/Scatter
+### Gallery — ECharts (20)
+Theme River, Pictorial Bar, Wind Rose, Polar Scatter, Liquid Fill Gauge, Nightingale Rose, Bar Race, Circular Graph, Sankey (Vertical), 3D Gauge/Funnel/Pie, Stacked Donut, Calendar Scatter, Radar (Polar), Bubble Map, River Flow, Polar Bar, 3D Globe/Scatter
 
 ### Gallery — D3 (17)
-Force Bubbles, Hexbin, Radial Tree, Streamgraph, Word Cloud, Zoomable Sunburst, Violin, Beeswarm, Lollipop, Arc Diagram, Packed Circles, Ridgeline, Slope, Waffle, Dot Plot, Histogram, Marimekko
+Word Cloud, Radial Tree, Force Bubbles, Streamgraph, Hexbin, Zoomable Sunburst, Violin, Beeswarm, Lollipop, Arc Diagram, Packed Circles, Ridgeline, Slope, Waffle, Dot Plot, Histogram, Marimekko
 
 ### Gallery — Chart.js (10)
-Bubble, Mixed, Polar Area, Radar, Scatter, Stacked Bar, Nested Doughnut, Stacked Area, Floating Bar, Timeline
+Radar, Polar Area, Bubble, Mixed Bar + Line, Stacked Bar, Scatter, Nested Doughnut, Stacked Area, Floating Bar, Timeline
 
 ---
 
@@ -88,20 +88,19 @@ Open **+ Plugins** on Search to install from the gallery or paste a trusted ESM 
 
 ---
 
-## Tools & Automation (77+)
+## Tools & Automation (80+)
 
 Cribl Search Tools includes a full productivity suite accessible from the sidebar or via ⌘K:
 
-- **Security:** Attack simulation, correlation rules, alert authoring, automated investigation, incident war rooms, PII scanning
-- **Query tools:** KQL playground, REPL notebook, regex lab, custom macro functions, field mapping, schema exploration
-- **Automation:** If/then playbooks, scheduled report generation, bulk operations, webhook integrations
-- **Collaboration:** Panel comment threads, dashboard annotations, presentation mode, shareable snapshots, export studio
-- **Analytics:** Anomaly detection, metric forecasting, capacity planning, cost optimization, SLA monitoring
-- **Migration:** Guided Splunk migration wizard, side-by-side SPL/KQL comparison, ROI calculator
-- **Cinema:** Animated time-based data playback, full-screen cinema mode, WarGames-style attack globe
-- **NOC & Executive:** Status Wall (real-time health grid), Executive Mode (auto-cycling lobby display), Mobile/Tablet responsive layouts
-- **AI Intelligence:** **✦ Insights** (live KQL coaching, result Explain, Data Story, dashboard Tidy/Beautify), Panel Explain ("why did this spike?"), Anomaly Narratives (AI incident summaries), Query Cost Estimator (pre-run cost analysis), **✦ Assist** (⌘/Ctrl-J) for deep expert review
-- **Cross-Dashboard:** Global Search, Dashboard Diff (version comparison), Drill-Through Links, Multi-Tenant Views (MSSP isolation), Embedded Notebooks, Investigation Templates
+- **Query tools:** KQL playground, REPL notebook, Query Studio (library, explainer, translator), regex lab, custom macro functions, field mapping, schema exploration
+- **Security & compliance:** security visualizations, Compliance Mapper, Anomaly Narratives (AI incident summaries), Anonymizer with Cribl Guard scanning
+- **Automation:** scheduled report generation, bulk operations, export & backup, webhook integrations, drill-through links
+- **Collaboration:** dashboard notes & comments, annotations, Present mode, shareable snapshots
+- **Analytics:** anomaly detection, metric forecasting, capacity planning, cost optimization, SLA monitoring, TCO and ROI calculators
+- **Migration:** guided Splunk migration wizard, side-by-side SPL/KQL comparison, dashboard and query converters, migration readiness
+- **NOC & Executive:** Status Wall (real-time health grid), Executive Mode (auto-cycling lobby display), mobile/tablet responsive layouts
+- **AI Intelligence:** **✦ Insights** (live KQL coaching, result Explain, Data Story, dashboard Tidy/Beautify), Billy natural language → KQL, Query Cost Estimator (pre-run cost analysis), **✦ Assist** (⌘/Ctrl-J) for deep expert review
+- **Cross-Dashboard:** Global Search, Dashboard Diff (version comparison), Drill-Through Links, Multi-Tenant Views (MSSP isolation), Embedded Notebooks, Dashboard Lifecycle
 
 ---
 
